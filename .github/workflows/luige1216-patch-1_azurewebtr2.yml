@@ -1,12 +1,12 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy ASP app to Azure Web App - ProjectRestaurant
+name: Build and deploy ASP app to Azure Web App - AzureWebTr2
 
 on:
   push:
     branches:
-      - main
+      - LuiGe1216-patch-1
   workflow_dispatch:
 
 jobs:
@@ -51,7 +51,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'ProjectRestaurant'
+          app-name: 'AzureWebTr2'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F2A770936CF245BDBA3C57056054C7AA }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8ADFAD698FFD46D6A8C8C54803012B0E }}
           package: .
